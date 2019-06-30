@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>html form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>the code review</h1>
+        <h2>Sign up for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </header>
+    <div class="container">
+            <form class="forma" action="index.html" method="post">
+                <div class="contact">
+                   <div class="line"> </div>
+                    <fieldset>
+                        <legend>Contact information</legend>
+                            
+                            <div class="oneline">
+                         
+
+                            <label for="name">Full name</label>
+                            <input type="text" id="name" name="user_name" placeholder="required">
+                        
+                            <label for="mail" >Email address</label>
+                            <input type="email" id="mail" name="user_mail" placeholder="required">
+                        
+                            <label for="pnumber" >Phone number</label>
+                            <input type="tel" id="pnumber" name="user_number">
+                    
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="user_address"> 
+                        
+                            <label for="states">State</label>
+                            <select id="states" name="user-state" >
+                                <option value="choose" id="choose">Choose state</option>
+                                <option value="Utah">Utah</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="Teksas">Texas</option>
+                                <option value="Idaho">Idaho</option>
+                        
+                            </select>
+                            <label for="zip">Zip code</label>
+                            <input type="text" id="zip" name="user_zip">
+                            
+                            </div>
+                    </fieldset>
+                </div>
+                <div class="newsletter">
+                        <fieldset >
+                            <legend>Newsletter</legend>
+                        
+                                <p>Select the newsletter you would like to recive</p>
+                                
+                                <div class="row1">
+                                <input type="checkbox" id="htmlnews" class="box"  name="newsletter" value="HTML_News">
+                                <label for="htmlnews">Html News</label>
+                                </div>
+                                <div class="row2">
+                                <input type="checkbox" id="cssnews" class="box"  name="newsletter" value="CSS_News">
+                                <label for="cssnews">Css News</label>
+                                </div>
+                                <div class="row3">
+                                <input type="checkbox" id="javascript" class="box"  name="newsletter" value="Javascript_News">
+                                <label for="javascript">Javascript News</label>
+                                </div>
+                                
+                            
+                                <p>Newsletter format</p>
+                                <div class="row4">
+                                <input type="radio" id="html"  name="format" value="Html">
+                                <label for="html">Html</label>
+                                </div>
+                                <div class="row5">
+                                <input type="radio" id="plaintext"  name="format" value="Plain_text">
+                                <label for="plaintext">Plain text</label>
+                                </div>
+
+                                <label for="message">Other topics you would like to hear about</label>
+                                <textarea id="message" name="massage" rows="16" cols="50"></textarea><br>
+                                <input type="submit" value="Sing up">
+                            
+                        </fieldset>
+                </div>
+            </form>
+    </div>  
+    <footer>
+    <p>Copyright The Code Review </p>
+    </footer>
+</body>
+
+</html>
